@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Generate Monthly Borrowing Activity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            padding: 5vw;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn {
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 10px;
+            width: 16vw;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: lavender;
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        .square-btn:hover {
+            background-color: lavender;
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        .square-btn {
+            width: 10vw;
+            height: 10vw;
+            font-size: 1rem;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+            vertical-align: top;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <form action="generatemonth_processing.jsp" method="post">
+       Month: 
+       <select id="month" name="month" required>
+           <option value="01">January</option>
+           <option value="02">February</option>
+           <option value="03">March</option>
+           <option value="04">April</option>
+           <option value="05">May</option>
+           <option value="06">June</option>
+           <option value="07">July</option>
+           <option value="08">August</option>
+           <option value="09">September</option>
+           <option value="10">October</option>
+           <option value="11">November</option>
+           <option value="12">December</option>
+       </select><br><br>
+       <input type="submit" value="Submit">
+   </form>
+    <br><br><br>
+   <a href="borrow_report.html">Back to Report Options</a>
+</center>
+</body>
+</html>

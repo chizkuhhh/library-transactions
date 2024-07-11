@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Generate Yearly Borrowing Activity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            body {
+                padding: 5vw;
+                margin: 0;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .btn {
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+                width: 16vw;
+                margin-top: 20px;
+            }
+
+            .btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .square-btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            .square-btn {
+                width: 10vw;
+                height: 10vw;
+                font-size: 1rem;
+                padding: 10px;
+                margin: 20px;
+                border-radius: 5px;
+                vertical-align: top;
+                background-color: #3498db;
+                color: #fff;
+                text-align: center;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <form action="generateyear_processing.jsp" method="post">
+            Year: <input type="text" id="year" name="year" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br><br><br>
+        <a href="borrow_report.html">Back to Report Options</a>
+    </center>
+    </body>
+</html>

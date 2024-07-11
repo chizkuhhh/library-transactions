@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Borrower Data</title>
+    <style>
+        body {
+            padding: 5vw;
+            margin: 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        input[type="submit"]:hover {
+            background-color: lavender; /* Change the background color on hover */
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="addborrower_processing.jsp" method="post">
+        <label for="first_name">Borrower First Name:</label>
+        <input type="text" id="first_name" name="borrower_fname" required>
+
+        <label for="last_name">Borrower Last Name:</label>
+        <input type="text" id="last_name" name="borrower_lname" required>
+
+        <label for="email">Borrower Email:</label>
+        <input type="text" id="email" name="borrower_email" required>
+
+        <label for="mobile_no">Borrower Mobile Number:</label>
+        <input type="text" id="mobile_no" name="borrower_mobnum" required>
+
+        <label for="borrower_type">Borrower Type:</label>
+        <select id="borrower_type" name="borrower_type" required>
+            <option value="S">Student</option>
+            <option value="T">Teacher</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    
+    <center>
+        <a href="borrowers.html">Back to Borrower Management</a>
+    </center>
+</body>
+
+</html>
