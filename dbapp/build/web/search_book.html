@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search and View Book</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            body {
+                padding: 5vw; 
+                margin: 0; 
+            }
+            
+            form {
+                display: block; 
+                width: 80%;
+            }
+            
+            .btn {
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+                width: 16vw;
+                margin-top: 50px;
+            }
+
+            .btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2>Search and View a Book</h2>
+            
+            <form action="search_book_results.jsp">
+                Search By: 
+                <select id="search_type" name="search_type">
+                    <option value="book_id">Book ID</option>
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                    <option value="isbn">ISBN</option>
+                    <option value="section">Section</option>
+                </select>
+                <input type="search" id="search" name="search">
+                <input type="submit" value="Search">
+            </form>
+            
+
+            <a href="book_management.html">
+                <button class="btn">
+                    <i class="fa fa-arrow-circle-left">     Return to Book Management</i>
+                </button>
+            </a>
+
+        </center>
+    </body>
+</html>

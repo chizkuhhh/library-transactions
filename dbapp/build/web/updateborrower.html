@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Update Borrower</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                padding: 5vw;
+                margin: 0;
+            }
+
+            form {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            input, select {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+            }
+
+            input[type="submit"] {
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+                display: inline-block;
+            }
+
+            input[type="submit"]:hover {
+                background-color: lavender; /* Change the background color on hover */
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <form action="updateborrower_processing.jsp" method="post">
+            Borrower ID: <input type="text" name="borrower_id" required><br>
+            <label for="update_option">Choose Information to Update:</label>
+            <select name="update_option" id="update_option" required>
+                <option value="first_name">First Name</option>
+                <option value="last_name">Last Name</option>
+                <option value="email">Email</option>
+                <option value="mobile_no">Mobile Number</option>
+                <option value="type_of_user">Type of User</option>
+                <option value="quanti_borrowed">Quantity Borrowed</option>
+                <option value="quanti_returned">Quantity Returned</option>
+                <option value="quanti_lost_damage">Quantity Lost/Damaged</option>
+            </select><br>
+            New Value: <input type="text" name="new_value" required><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <a href="borrowers.html">Back to Borrower Management</a>
+    </center>
+    </body>
+</html>

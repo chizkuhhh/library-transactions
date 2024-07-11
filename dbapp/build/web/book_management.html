@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Book Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            body {
+                padding: 5vw; 
+                margin: 0; 
+            }
+            
+            .btn {
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+                width: 16vw;
+                margin-top: 20px;
+            }
+            
+            .btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px
+            }
+            
+            .square-btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px
+            }
+            
+            .square-btn {
+                width: 10vw;
+                height: 10vw;
+                font-size: 1rem;
+                
+                padding: 10px;
+                margin: 20px;
+                border-radius: 5px;
+                vertical-align: top;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2>Book Management</h2>
+            <br>
+            <a href="add_book.html">
+                <button class="btn square-btn">
+                    <i class="fa fa-plus"><br><br>Add a Book</i>
+                </button>
+            </a>
+            <a href="mod_book.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-pencil"><br><br>Modify a Book</i>
+                </button>
+            </a>
+            <a href="search_book.html">
+                <button class="btn square-btn">
+                    <i class="fa fa-eye"><br><br>Search and View a Book</i>
+                </button>
+            </a>
+            <br>
+            <a href="filter_books.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-filter"><br><br>Filter and List Books</i>
+                </button>
+            </a>
+            <a href="delete_book.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-trash"><br><br>Delete Book</i>
+                </button>
+            </a><br><br><br>
+            
+            <a href="staff_view.html">
+                <button class="btn">
+                    <i class="fa fa-home">     Return to Main Menu</i>
+                </button>
+            </a>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home (Borrower)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            body {
+                padding: 5vw; 
+                margin: 0; 
+            }
+            
+            .btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+            }
+            
+            .square-btn {
+                width: 10vw;
+                height: 10vw;
+                font-size: 1rem;
+                
+                padding: 10px;
+                margin: 20px;
+                border-radius: 5px;
+                vertical-align: top;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            .part-container {
+                display: inline-block;
+            }
+            
+            .btn {
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+                width: 16vw;
+                margin-top: 20px;
+            }
+            
+            .btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2>Library Activity Tracking and Incident Report Management</h2>
+            <h4><i>Borrower View</i></h4>
+            <br><br>
+            <h3>Transactions</h3>
+            <a href="borrow.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-hand-lizard-o"><br><br>Borrow a Book</i>
+                </button>
+            </a>
+            <a href="return.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-undo"><br><br>Return a Book</i>
+                </button>
+            </a>
+            <a href="incident_report.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-flag"><br><br>Report an Incident</i>
+                </button>
+            </a><br><br><br>
+            
+            <a href="index.html">
+                <button class="btn">
+                    <i class="fa fa-server">     Return to User Select</i>
+                </button>
+            </a>
+        </center>
+    </body>
+</html>

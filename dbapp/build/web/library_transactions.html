@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Library Transactions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            body {
+                padding: 5vw; 
+                margin: 0; 
+            }
+            
+            .btn {
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px;
+                width: 16vw;
+                margin-top: 20px;
+            }
+            
+            .btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px
+            }
+            
+            .square-btn:hover {
+                background-color: lavender;
+                border-radius: 5px;
+                font-size: 1rem;
+                padding: 10px
+            }
+            
+            .square-btn {
+                width: 10vw;
+                height: 10vw;
+                font-size: 1rem;
+                
+                padding: 10px;
+                margin: 20px;
+                border-radius: 5px;
+                vertical-align: top;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2>Library Transactions</h2>
+            <br>
+            <a href="add_trans.html">
+                <button class="btn square-btn">
+                    <i class="fa fa-plus"><br><br>Add Transaction</i>
+                </button>
+            </a>
+            <a href="search_view_trans.html">
+                <button class="btn square-btn">
+                    <i class="fa fa-search"><br><br>Search and View Transaction</i>
+                </button>
+            </a>
+            <a href="view_all_trans.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-eye"><br><br>View All Transactions</i>
+                </button>
+            </a>
+            <br>
+            <a href="filter_trans.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-filter"><br><br>Filter and List Transactions</i>
+                </button>
+            </a>
+            <a href="update_trans.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-pencil"><br><br>Update Transaction</i>
+                </button>
+            </a>
+            <a href="delete_trans.jsp">
+                <button class="btn square-btn">
+                    <i class="fa fa-trash"><br><br>Delete Transaction</i>
+                </button>
+            </a><br><br><br>
+            
+            <a href="staff_view.html">
+                <button class="btn">
+                    <i class="fa fa-home">     Return to Main Menu</i>
+                </button>
+            </a>
+        </center>
+    </body>
+</html>

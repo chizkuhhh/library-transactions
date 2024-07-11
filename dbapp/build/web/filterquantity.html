@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>View Filtered Report</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="filterquantity_processing.jsp" method="post">
+            <label>Select Report Type:</label>
+            <select name="reportType" required>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+            </select><br>
+
+            <label>Select Date:</label>
+            <select name="date" required>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <input type="text" name="year" placeholder="Enter Year" required><br>
+
+            <label>Select Filter:</label>
+            <select name="filterType" required>
+                <option value="total">Total Books Borrowed</option>
+                <option value="section">Total Books Borrowed in a Specific Section</option>
+                <option value="offline">Total Books Borrowed in Offline Setup</option>
+                <option value="online">Total Books Borrowed in Online Setup</option>
+            </select><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <a href="borrow_report.html">Back to Report Options</a>   
+    </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Transaction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            padding: 5vw;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 80%; /* Adjust the maximum width as needed */
+            padding: 2%;
+            margin: 0 auto; /* Center the form container */
+            border: 1px solid #ddd;
+        }
+
+        form {
+            width: 100%; 
+            padding: 10px;
+            box-sizing: border-box; /* Include padding and border in the total width/height */
+        }
+
+        .input-container {
+            display: inline-block;
+            width: calc(30% - 20px); /* Calculate width considering margins and padding */
+            margin-right: 2%; /* Adjust margin as needed */
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        
+        .input-container2 {
+            display: inline-block;
+            width: calc(48% - 20px); /* Calculate width considering margins and padding */
+            margin-right: 2%; /* Adjust margin as needed */
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        form h3 {
+            margin-bottom: 10px; /* Add some space between the heading and inputs */
+        }
+        
+        #submit-btn {
+            display: block; /* Ensure the button takes up the full width */
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+        
+        #submit-btn:hover {
+            background-color: lavender; /* Change the background color on hover */
+        }
+        
+        .btn {
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 10px;
+            width: 16vw;
+            margin-top: 50px;
+        }
+
+        .btn:hover {
+            background-color: lavender;
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 10px
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Add Transaction</h2>
+    </center>
+
+    <div class="form-container">
+        <form action="transaction_details.jsp">
+            <h3>Borrower Details</h3>
+            <div class="input-container">
+                First Name: <input type="text" id="bfirst_name" name="bfirst_name" placeholder="John">
+            </div>
+            <div class="input-container">
+                Last Name: <input type="text" id="blast_name" name="blast_name" placeholder="Doe">
+            </div>
+            <div class="input-container">
+                Borrower ID: <input type="number" id="borrower_id" name="borrower_id" placeholder="000000">
+                <!-- Turn into drop down list? -->
+            </div>
+
+            <h3>Book Details</h3>
+            <div class="input-container2">
+                Book Title: <input type="text" id="title" name="title" placeholder="Book Title">
+                <!-- Turn into drop down list -->
+            </div>
+            <div class="input-container2">
+                Author: <input type="text" id="author" name="author" placeholder="Author">
+            </div>
+
+            <h3>Transaction Details</h3>
+            <div class="input-container">
+                Checkout Date: <input type="date" id="checkout_date" name="checkout_date">
+            </div>
+            <div class="input-container">
+                Return Date: <input type="date" id="return_date" name="return_date">
+            </div>
+            <div class="input-container">
+                Status: <select id="status_drop" name="status_drop">
+                            <option value="" disabled selected>Status</option>
+                            <option value="returned">Returned</option>
+                            <option value="late">Late</option>
+                            <option value="lost">Lost</option>
+                            <option value="damaged">Damaged</option>
+                        </select>
+            </div>
+            
+            <h3>Authorizing Staff</h3>
+            <div class="input-container">
+                First Name: <input type="text" id="s_first_name" name="s_first_name" placeholder="John">
+            </div>
+            <div class="input-container">
+                Last Name: <input type="text" id="s_last_name" name="s_last_name" placeholder="Doe">
+            </div>
+            <div class="input-container">
+                Staff ID: <input type="number" id="staff_id" name="staff_id" placeholder="000000">
+            </div>
+        </form>
+        
+        <button id="submit-btn" type="submit">Submit</button>
+    </div>
+
+    <center>
+    <a href="library_transactions.html">
+        <button class="btn">
+            <i class="fa fa-arrow-circle-left">     Return to Library Transactions</i>
+        </button>
+    </a>
+    </center>
+
+    <script>
+        // Get the submit button and forms
+        var submitButton = document.getElementById('submit-btn');
+        var forms = document.querySelectorAll('form');
+
+        // Attach an event listener to the button
+        submitButton.addEventListener('click', function() {
+            // Loop through each form and submit it
+            forms.forEach(function(form) {
+                form.submit();
+            });
+        });
+    </script>
+</body>
+</html>
